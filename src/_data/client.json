@@ -1,21 +1,21 @@
 {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-123-4567",
-    "phoneFormatted": "(555) 123-4567",
+    "name": "nusquamu",
+    "email": "admin@nusquamu.com",
+    "phoneForTel": "867-5309",
+    "phoneFormatted": "(555) BAT-PHONE",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "city": "Nowhere",
+        "state": "MU",
+        "zip": "90210",
+        "mapLink": "https://maps.app.goo.gl/qHktDHMc1xjvHRx58"
     },
     "social": {
-        "facebook": "https://www.facebook.com/",
-        "twitter": "https://twitter.com/",
-        "instagram": "https://www.instagram.com/",
-        "youtube": "https://www.youtube.com/"
+        "facebook": "https://www.facebook.com/nusquamu",
+        "twitter": "https://twitter.com/nusquamu",
+        "instagram": "https://www.instagram.com/nusquamu",
+        "youtube": "https://www.youtube.com/nusquamu"
     },
     "domain": "https://codestitch-advanced.g8.wtf"
 }
