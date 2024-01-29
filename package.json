@@ -12,14 +12,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/CodeStitchOfficial/Advanced-Starter-Kit.git"
+        "url": "git+https://github.com/nusquamu/codestitch-advanced.git"
     },
-    "author": "CodeStitch",
+    "author": "nusquamu",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/CodeStitchOfficial/Advanced-Starter-Kit/issues"
+        "url": "https://github.com/nusquamu/codestitch-advanced/issues"
     },
-    "homepage": "https://github.com/CodeStitchOfficial/Advanced-Starter-Kit#readme",
+    "homepage": "https://github.com/nusquamu/codestitch-advanced#readme",
     "dependencies": {
         "@11ty/eleventy": "^2.0.1",
         "@11ty/eleventy-navigation": "^0.3.5",
