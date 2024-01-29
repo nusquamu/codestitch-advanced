@@ -1,21 +1,21 @@
 {
-    "name": "nusquamu",
-    "email": "admin@nusquamu.com",
-    "phoneForTel": "867-5309",
-    "phoneFormatted": "(555) BAT-PHONE",
-    "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Nowhere",
-        "state": "MU",
-        "zip": "90210",
-        "mapLink": "https://maps.app.goo.gl/qHktDHMc1xjvHRx58"
-    },
-    "social": {
-        "facebook": "https://www.facebook.com/nusquamu",
-        "twitter": "https://twitter.com/nusquamu",
-        "instagram": "https://www.instagram.com/nusquamu",
-        "youtube": "https://www.youtube.com/nusquamu"
-    },
-    "domain": "https://codestitch-advanced.g8.wtf"
+  "name": "nusquamu",
+  "email": "admin@nusquamu.com",
+  "phoneForTel": "867-5309",
+  "phoneFormatted": "(555) BAT-FONE",
+  "address": {
+    "lineOne": "First Address Line",
+    "lineTwo": "Second Address Line",
+    "city": "Nowhere",
+    "state": "MU",
+    "zip": "90210",
+    "mapLink": "https://maps.app.goo.gl/qHktDHMc1xjvHRx58"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/nusquamu",
+    "twitter": "https://twitter.com/nusquamu",
+    "instagram": "https://www.instagram.com/nusquamu",
+    "youtube": "https://www.youtube.com/nusquamu"
+  },
+  "domain": "https://codestitch-advanced.g8.wtf"
 }
