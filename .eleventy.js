@@ -13,6 +13,9 @@ const configImage = require("./src/config/plugins/image");
 const configCss = require("./src/config/eleventy/css");
 const configJs = require("./src/config/eleventy/javascript");
 
+// Filter Imports
+const filterFormatDate = require("./src/config/filters/formatDate");
+
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 
 module.exports = function (eleventyConfig) {
@@ -54,19 +57,13 @@ module.exports = function (eleventyConfig) {
      *      Copy/paste non-template files straight to /public, without any interference from the eleventy engine
      *      https://www.11ty.dev/docs/copy/
      */
-    eleventyConfig.addPassthroughCopy("./src/assets/css");
-    eleventyConfig.addPassthroughCopy("./src/assets/favicons");
-    eleventyConfig.addPassthroughCopy("./src/assets/fonts");
-    eleventyConfig.addPassthroughCopy("./src/assets/images");
-    eleventyConfig.addPassthroughCopy("./src/assets/js");
-    eleventyConfig.addPassthroughCopy("./src/assets/svgs");
-
     // eleventyConfig.addPassthroughCopy("./src/assets/css"); // CS-TODO - For optimization branch, remove CSS passthrough
     eleventyConfig.addPassthroughCopy("./src/assets/favicons");
     eleventyConfig.addPassthroughCopy("./src/assets/fonts");
     eleventyConfig.addPassthroughCopy("./src/assets/images");
     // eleventyConfig.addPassthroughCopy("./src/assets/js"); // CS-TODO - For optimization branch, remove JS passthrough
     eleventyConfig.addPassthroughCopy("./src/assets/svgs");
+    eleventyConfig.addPassthroughCopy("./src/admin");
 
     /**
      *  EXTENSIONS
@@ -79,51 +76,6 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addTemplateFormats("js");
     eleventyConfig.addExtension("js", configJs);
-
-    return {
-        dir: {
-            input: "src",
-            output: "public",
-            includes: "_includes",
-            data: "_data",
-        },
-        htmlTemplateEngine: "njk",
-    };
-};
-// Plugin Imports
-const pluginDirectoryOutput = require("@11ty/eleventy-plugin-directory-output");
-const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
-
-// Filter Imports
-const filterFormatDate = require("./src/config/filters/formatDate");
-
-module.exports = function (eleventyConfig) {
-    /**
-     *  PLUGINS
-     *      Adds additional eleventy functionality through official or community-created add-ons
-     *      https://www.11ty.dev/docs/plugins/
-     */
-
-    // Provides benchmarks in the terminal when a website is built. Useful for diagnostics.
-    // https://www.11ty.dev/docs/plugins/directory-output/
-    eleventyConfig.addPlugin(pluginDirectoryOutput);
-
-    // Allows navigation items to be defined in a scalable way via the front matter
-    // https://www.11ty.dev/docs/plugins/navigation/
-    eleventyConfig.addPlugin(pluginEleventyNavigation);
-
-    /**
-     *  PASSTHROUGH'S
-     *      Copy/paste non-template files straight to /public, without any interference from the eleventy engine
-     *      https://www.11ty.dev/docs/copy/
-     */
-    eleventyConfig.addPassthroughCopy("./src/assets/css");
-    eleventyConfig.addPassthroughCopy("./src/assets/favicons");
-    eleventyConfig.addPassthroughCopy("./src/assets/fonts");
-    eleventyConfig.addPassthroughCopy("./src/assets/images");
-    eleventyConfig.addPassthroughCopy("./src/assets/js");
-    eleventyConfig.addPassthroughCopy("./src/assets/svgs");
-    eleventyConfig.addPassthroughCopy("./src/admin");
 
     /**
      *  FILTERS
